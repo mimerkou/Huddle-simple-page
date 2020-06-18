@@ -1,1 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --violet: #674baf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--violet);
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    margin: 4rem 0 3rem 0;
+    letter-spacing: 0.1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 1.8rem;
+    color: white;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+}
+
+.container {
+    padding: 3rem 6rem;
+    margin: auto;
+    max-width: 100%;
+}
+
+.logo {
+    margin-bottom: 4rem;
+}
+
+.content {
+    display: flex;
+}
+
+.content>div:first-child {
+    flex: 0.6;
+}
+
+.content>div:last-child {
+    flex: 0.4;
+}
+
+.content-img {
+    /* border: 1px solid white; */
+    /* width: 100%; */
+}
+
+.content-img img {
+    width: 80%;
+    margin: auto;
+}
+
+.content-text {
+    /* border: 1px solid white; */
+    margin-left: -10rem;
+    /* width: 40%; */
+}
+
+button {
+    margin-top: 2.7rem;
+    background-color: white;
+    color: var(--violet);
+    padding: 1.5rem 6rem;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.social {
+    margin-top: 4rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.social-links a {
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+    height: 5rem;
+    width: 5rem;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+
+@media screen and (max-width: 1192px) {
+    .social {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .content-text {
+        margin-left: -7rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .content-text {
+        margin-left: -5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {}
